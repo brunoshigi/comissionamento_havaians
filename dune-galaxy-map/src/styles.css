@@ -1,0 +1,78 @@
+:root {
+  font-family: 'Poppins', system-ui, sans-serif;
+  color: #f5ede1;
+  background: radial-gradient(circle at top, #1b1a25, #0a0913 60%);
+  height: 100%;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+canvas {
+  outline: none;
+}
+
+.info-panel {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  max-width: 320px;
+  background: rgba(8, 7, 15, 0.8);
+  padding: 1.25rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(245, 237, 225, 0.15);
+  backdrop-filter: blur(6px);
+}
+
+.info-panel h1 {
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+}
+
+.info-panel p,
+.info-panel li {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #d6c9b1;
+}
+
+.info-panel ul {
+  padding-left: 1.1rem;
+  margin: 0.75rem 0;
+}
+
+.tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: rgba(14, 13, 23, 0.9);
+  color: #fff4d6;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  transform: translate(-50%, -120%);
+  border: 1px solid rgba(255, 244, 214, 0.4);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.tooltip .title {
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.tooltip .subtitle {
+  font-size: 0.7rem;
+  color: rgba(255, 244, 214, 0.75);
+}
